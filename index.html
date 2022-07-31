@@ -1,0 +1,826 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Food / Resturant Website Design Tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <img src="https://cdn-icons-png.flaticon.com/128/3828/3828234.png" alt="" width="30" height="30">Kandhar Traders </a>
+    
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#popular">popular</a>
+        <a href="#menu">menu</a>
+        <a href="#order">order</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+    
+</header>
+
+<!-- header section ends  -->
+
+<!-- search-form  -->
+
+<section class="search-form-container">
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</section>
+
+<!-- shopping-cart section  -->
+
+<section class="shopping-cart-container">
+
+    <div class="products-container">
+
+        <h3 class="title">your products</h3>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-1.png" alt="">
+                <div class="content">
+                    <h3>Almonds</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> $40.00 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-2.png" alt="">
+                <div class="content">
+                    <h3>Dried Blueberries</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> $40.00 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-3.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> $40.00 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-4.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> $40.00 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-5.png" alt="">
+                <div class="content">
+                    <h3>delicious food</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> $40.00 </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cart-total">
+
+        <h3 class="title"> cart total </h3>
+
+        <div class="box">
+
+            <h3 class="subtotal"> subtotal : <span>$200</span> </h3>
+            <h3 class="total"> total : <span>$200</span> </h3>
+
+            <a href="#" class="btn">proceed to checkout</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- login-form  -->
+
+<div class="login-form-container">
+
+    <form action="">
+        <h3>login form</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="password" name="" placeholder="enter your password" id="" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span>welcome foodies</span>
+        <h3>different spices for the different tastes 😋</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde dolores temporibus hic quam debitis tenetur harum nemo.</p>
+        <a href="#" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="image/homebg.png" alt="" class="home-img">
+        <img src="" alt=""class="home-parallax-img">
+    </div>
+
+</section>
+
+<!-- home section ends  -->
+
+<!-- category section starts  -->
+
+<section class="category">
+
+    <a href="#" class="box">
+        <img src="http://www.kandhartraders.com/images/dates.jpg" alt="">
+        <h3>DATES</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="http://www.kandhartraders.com/images/chandler-walnut.jpg" alt="">
+        <h3>WALNUTS</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="http://www.kandhartraders.com/images/figs_270x180.jpg" alt="">
+        <h3>FIGS</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="http://www.kandhartraders.com/images/afghan-raisin-500x500.jpg" alt="">
+        <h3>RAISINS</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="http://www.kandhartraders.com/images/blackberry%20.jpg" alt="">
+        <h3>BLACKBERRY</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="http://www.kandhartraders.com/images/cranberry.jpeg" alt="">
+        <h3>CRANBERRY</h3>
+    </a>
+
+</section>
+
+<!-- category section ends -->
+
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="image/frame.png" alt="">
+    </div>
+
+    <div class="content">
+        <span>why choose us?</span>
+        <h3 class="title">what's make our food delicious!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut explicabo, numquam iusto est a ipsum assumenda tempore esse corporis?</p>
+        <a href="#" class="btn">read more</a>
+        <div class="icons-container">
+            <div class="icons">
+                <img src="image/serv-1.png" alt="">
+                <h3>fast delivery</h3>
+            </div>  
+            <div class="icons">
+                <img src="https://cdn-icons-png.flaticon.com/128/3828/3828234.png" alt="" width="30" height="30">
+                <h3>dry fruits</h3>
+            </div>   
+            <div class="icons">
+                <img src="image/serv-3.png" alt="">
+                <h3>best quality</h3>
+            </div>  
+            <div class="icons">
+                <img src="image/serv-4.png" alt="">
+                <h3>24/7 support</h3>
+            </div>           
+        </div>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- popular section starts  -->
+
+<section class="popular" id="popular">
+
+    <div class="heading">
+        <span>popular food</span>
+        <h3>our special dishes</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="https://hdn-1.fynd.com/products/pictures/item/free/resize-w:360/DYN28/F8Sf81h7e3-1.webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Dried Blueberries</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">$40.00 <span>$50.00</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="https://hdn-1.fynd.com/products/pictures/item/free/resize-w:360/dJ-9Gp3h3-Jalapeno-Cashews-(250-Gms).webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Almonds</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">$40.00 <span>$50.00</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="https://hdn-1.fynd.com/products/pictures/item/free/resize-w:360/DYN9_250/248eEfXjBO-1.webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Medjool Dates</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">$40.00 <span>$50.00</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="https://hdn-1.fynd.com/products/pictures/item/free/resize-w:360/lPZolzDYU-American-Salted-Almonds-(250-Gms).webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Flax Seeds</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">$40.00 <span>$50.00</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="https://hdn-1.fynd.com/products/pictures/item/free/resize-w:360/p45dfC7yQ-Californian-Prunes-(250-Gms).webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Cashew Nuts</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">$40.00 <span>$50.00</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="https://hdn-1.fynd.com/products/pictures/item/free/resize-w:360/ClTqjS5ss-Pudina-Cashews-(250-Gms).webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Dried Cranberries</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">$40.00 <span>$50.00</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="https://hdn-1.fynd.com/products/pictures/item/free/resize-w:360/Xa-NkTRE9-Chilian-Walnuts-Kernels-(250-Gms).webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Safavi Dates</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">$40.00 <span>$50.00</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="https://hdn-1.fynd.com/products/pictures/item/free/resize-w:360/DYN39_250/eHnub56qnF-1.webp" alt="">
+            </div>
+            <div class="content">
+                <h3>Pumpkin Seeds</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">$40.00 <span>$50.00</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- popular section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <div class="row-banner">
+        <img src="https://royalgoamewawala.com/assets/img/slider/H2-DRY_FRUIT.jpg" alt="">
+            
+    </div>
+
+    <div class="grid-banner">
+        <div class="grid">
+            <img src="https://hdn-1.fynd.com/products/pictures/item/free/original/3tKG_t1ag-DYN-Diwali-Gift-Box-(small).jpeg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="grid">
+            <img src="https://hdn-1.fynd.com/products/pictures/item/free/original/vaaml6-Yz-Diwali-Gift-Box.jpeg" alt="">
+            <div class="content center">
+                <span>special offer</span>
+                <h3>upto 25% extra</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="grid">        
+            <img src="https://hdn-1.fynd.com/products/pictures/item/free/original/Ivh9ADFrI-Wholesome-Colorful-Box.jpeg" alt="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>100% cashback</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <div class="heading">
+        <span>our menu</span>
+        <h3>our top dishes</h3>
+    </div>
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="https://hdn-1.fynd.com/products/pictures/item/free/original/pg_QH90KK-Pecan-Nuts-(500-Gms).jpeg" alt="">
+            <div class="content">
+                <h3>Pecan Nuts (500 Gms)
+</h3>
+                <div class="price">$40.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="https://hdn-1.fynd.com/products/pictures/item/free/original/DYN19/gabRKb9z_2-1.jpg" alt="">
+            <div class="content">
+                <h3>Turkish Apricot (500 Gms)</h3>
+                <div class="price">$40.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="https://hdn-1.fynd.com/products/pictures/item/free/original/OlyRbN0zV-Afghani-Apricots-(Jardalu)-(250-Gms).jpeg" alt="">
+            <div class="content">
+                <h3>Afghani Apricots (Jardalu) (250 Gms)</h3>
+                <div class="price">$40.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="https://hdn-1.fynd.com/products/pictures/item/free/original/DYN38/pA-p6Gz2k2-1.jpg" alt="">
+            <div class="content">
+                <h3>American Cranberry (500 Gms)</h3>
+                <div class="price">$40.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="https://hdn-1.fynd.com/products/pictures/item/free/original/DYN50/38S-dvhvGF-1.jpg" alt="">
+            <div class="content">
+                <h3>Brazil Nuts (500 Gms)</h3>
+                <div class="price">$40.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="https://hdn-1.fynd.com/products/pictures/item/free/original/kcziMbw9_-Turkish-Hazel-Nuts-(250-Gms).jpeg" alt="">
+            <div class="content">
+                <h3>Turkish Hazel Nuts (500 Gms)</h3>
+                <div class="price">$40.00</div>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <div class="heading">
+        <span>order now</span>
+        <h3>fastest home delivery</h3>
+    </div>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <img src="image/icon-1.png" alt="">
+            <h3>7:00am to 10:30pm</h3>
+        </div>
+
+        <div class="icons">
+            <img src="image/icon-2.png" alt="">
+            <h3>+123-456-7890</h3>
+        </div>
+
+        <div class="icons">
+            <img src="image/icon-3.png" alt="">
+            <h3>mumbai, india - 400104</h3>
+        </div>
+
+    </div>
+
+<!-- filter form section starts  -->
+
+<section class="form-container" data-kos="zoom-in">
+
+    <script type="text/javascript">var submitted=false;</script><form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWQi5mPWim9lYj1GCszsAafNKqIQ9rgsRTqCSDLzCS6a0BTA/formResponse" target="hidden_iframe" onsubmit="submitted=true" method="POST">
+
+        <div class="inputBox">
+            <span>Name</span>
+            <input type="text" placeholder="Name" name="entry.1813269152">
+        </div>
+
+        <div class="inputBox">
+            <span>Email</span>
+            <input type="email" placeholder="Email" name="entry.830886664">
+        </div>
+
+        <div class="inputBox">
+            <span>Mobile Number</span>
+            <input type="Number" placeholder="Mobile Number" name="entry.2057217389">
+        </div>
+        
+        <div class="inputBox">
+            <span>Total Bill Amount</span>
+            <input type="Number" placeholder="Total Bill Amount" name="entry.163400224">
+        </div>
+        
+        <div class="inputBox">
+            <span>Pincode</span>
+            <input type="Number" placeholder="Pincode" name="entry.75133225">
+        </div>
+
+        <input type="submit" value="Bill Upload" class="btn"style=color:#fff;background:#6e70f0;>
+
+    </form>
+</section>
+<!-- filter form section ends -->
+
+    <form action="">
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>your name</span>
+                <input type="text" placeholder="customer's name" name="" id="">
+            </div>
+            <div class="inputBox">
+                <span>your number</span>
+                <input type="number" placeholder="customer's number" name="" id="">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>your order</span>
+                <input type="text" placeholder="food you want" name="" id="">
+            </div>
+            <div class="inputBox">
+                <span>how much</span>
+                <input type="number" placeholder="number or orders" name="" id="">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>your details</span>
+                <input type="text" placeholder="your message" name="" id="">
+            </div>
+            <div class="inputBox">
+                <span>pick up time</span>
+                <input type="datetime-local">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <textarea placeholder="your address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="inputBox">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1634657187694!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <input type="submit" value="proceed to order" class="btn">
+
+    </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <span>our blogs</span>
+        <h3>our daily stories</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 21st may, 2021 </h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYBlBqZTUDY46gyOkqkgP6939tUKYVZ2xrxA&usqp=CAU" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                      <a href="#"> <i class="fas fa-tag"></i> WALNUTS / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Almonds / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Dates  </a>
+                </div>
+                <h3>Rohit Sharma Sh</h3>
+                <p>I got introduced to American Dry Fruits through my father who happened to visit the store about two years back. We were really impressed by the quality and the wide range of products available there. Being from Kerala, we often asked our friends who travelled to Mumbai to get dry fruits for us. However, with the lockdown and other restrictions in place, it was their online services that came to our rescue. The team was very supportive throughout the shipment process and the products were well packaged, and reached home intact. American Dry Fruits have won the trust of my family!! Special thanks to Mr. Manoj for your services.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 21st may, 2021 </h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEHfG2EO1xfzIN8fmn0bueXe21vlX5cOUKFQ&usqp=CAU" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> WALNUTS / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Almonds / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Dates  </a>
+                </div>
+                <h3>Virat Kohli</h3>
+                <p>We would like to express our sincere gratitude for your service to us as one of our trustworthy suppliers. Ever since we signed our contract, you have provided delivery of goods before discussed time line. Today we are in receipt of 750 nos of boxes today of dry-fruits as per our requirement. We look forward to extending our contract with you for years to come and hope you will continue to provide such excellent service to us. Thank you for a favorable first year in business together, and we look forward to many more.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 21st may, 2021 </h3>
+                <img src="https://cdn.shopify.com/s/files/1/0587/1933/8677/products/Midnight-Munchies.jpg?v=1634805342&width=533" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                      <a href="#"> <i class="fas fa-tag"></i> WALNUTS / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Almonds / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Dates  </a>
+                </div>
+                <h3>MS Dhoni</h3>
+                <p>Thank you very much for your valued suggestions and change in the items as discussed on phone today. The items suggested were very different .Very Good Quality ,fresh, and the packing was also attractive and neat. Very impressed and happy. You made my day for the special occasion of Rakhi. Look forward for placing orders in future.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="newsletter">
+        <h3>newsletter</h3>
+        <form action="">
+            <input type="email" name="" placeholder="enter your email" id="">
+            <input type="submit" value="subscribe">
+        </form>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our menu</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i> WALNUTS</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> DATES</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> BLACKBERRY</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> CRANBERRY</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> and more...</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="#about"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="#popular"> <i class="fas fa-arrow-right"></i> popular</a>
+            <a href="#menu"> <i class="fas fa-arrow-right"></i> menu</a>
+            <a href="#order"> <i class="fas fa-arrow-right"></i> order</a>
+            <a href="#blogs"> <i class="fas fa-arrow-right"></i> blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my favorite</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> terms of use</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> privary policy</a>
+        </div>
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p>monday : 11:00am to 7:00pm</p>
+            <p>tuesday : 11:00am to 7:00pm</p>
+            <p>wednesday : 11:00am to 7:00pm</p>
+            <p>friday : 11:00am to 7:00pm</p>
+            <p>friday : 11:00am to 7:00pm</p>
+            <p>sunday closed</p>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="credit"> created <span>Kandhar Traders</span> | all rights reserved! </div>
+        
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
