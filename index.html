@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Responsive Food / Resturant Website Design Tutorial</title>
+    <title>DryFruits Wholesale Retailshop</title>
+<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/3828/3828234.png">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -37,8 +38,200 @@
     </div>
     
 </header>
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
 
+* {
+  box-sizing: border-box;
+}
 
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783730761.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783840445.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783857424.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1620384315458.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1622364260077.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1620384369062.jpeg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783730761.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783840445.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783857424.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1620384315458.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1622364260077.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1620384369062.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
 <!-- home section starts  -->
 
 <section class="home" id="home">
@@ -96,6 +289,160 @@
 </section>
 
 <!-- category section ends -->
+<!-- category section starts  -->
+<h1 class="heading"> Shopping <span>Categories</span> </h1>
+
+
+<section class="category">
+<a href="#" class="box">
+        <img src="https://i.ibb.co/tJsdw4v/39fd35a8-ae67-6580-3839-6cddf593a1de-removebg-preview.png" alt="">
+        <h3>Recharge & Bill Payment</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://i.ibb.co/hCcM1F1/Loan-Insurance1-removebg-preview.png" alt="">
+        <h3>Loan & Insurance</h3>
+    </a>
+   <a href="https://script.google.com/a/macros/mazaama.in/s/AKfycby6FSaUyD9KEowePJtVCq752e90aYKrPGKR2bsznj3PZysyV1AJbPzbSelKdFVTRsyfPA/exec" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/aesc-grocerycore.svg" alt="">
+        <h3>Grocery</h3>
+    </a>
+   
+   <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/aesc-dairyandbeveragescore.svg" alt="">
+        <h3>Dairy & Beverages
+</h3>
+    </a>
+   
+   <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/aesc-fruitsandvegetablescore.svg" alt="">
+        <h3>Fruits & Vegetables
+</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/aesc-packagedfoodcore.svg" alt="">
+        <h3>Packaged Food
+</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/aesc-appliancescore.svg" alt="">
+        <h3>Appliances</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/aesc-babyandkidscore.svg" alt="">
+        <h3>Baby & Kids
+</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/homkitchen15421.svg" alt="">
+        <h3>Home & Kitchen
+</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/aesc-personalcarecore.svg" alt="">
+        <h3>Personal Care
+</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/aesc-schoolsuppliescore.svg" alt="">
+        <h3>School Supplies
+</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/935201.svg" alt="">
+        <h3>Clothing & Accessories
+</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://img.dmart.in/images/rwd/categories/aesc-specialscore.svg" alt="">
+        <h3>Specials</h3>
+    </a>
+   
+   <a href="#" class="box">
+        <img src="https://i.ibb.co/rp2TxJN/cat-1.png" alt="a">
+        <h3>combo</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://i.ibb.co/N3cK3rL/cat-2.png" alt="">
+        <h3>pizza</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://i.ibb.co/9Gh2t5W/cat-3.png" alt="">
+        <h3>burger</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://i.ibb.co/jr00mD2/cat-4.png" alt="">
+        <h3>Food</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://i.ibb.co/DfkMDw4/cat-5.png" alt="">
+        <h3>dinner</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://i.ibb.co/KVkyXMh/cat-6.png" alt="">
+        <h3>coffee</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/computeraccessories_358_166_0402._CB455768652_.png" alt="">
+        <h3>Computers & Accessories</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/mobilccessories_358_166_0402._CB455768652_.png" alt="">
+        <h3>Mobiles & Accessories</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Electronics_358_166_0402._CB455768652_.png" alt="">
+        <h3>Electronics</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Appliances_358_166_0402._CB455768652_.png" alt="">
+        <h3>Appliances</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Kitchenette_358_166._CB455652711_.png" alt="">
+        <h3>Kitchen</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Officefurniture_358_166_0402._CB455768655_.png" alt="">
+        <h3>Furniture</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Officdecor_358_166_0402._CB455768652_.png" alt="">
+        <h3>Decor & Furnishing</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/OfficeSupplies_358_166_0402._CB455768654_.png" alt="">
+        <h3>Office Supplies</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/OfficeImprovement_358_166._CB455652714_.png" alt="">
+        <h3>Improvement</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/IndustrialSupply_358_166._CB455652715_.png" alt="">
+        <h3>Industrial Supplies</h3>
+    </a>
+    
+    <a href="#" class="box">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Backpacksuggage_358_166_0402._CB455768652_.png" alt="">
+        <h3>Backpacks & Luggage</h3>
+    </a>
+    
+
+</section>
 
 
 <!-- about section starts  -->
