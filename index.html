@@ -38,65 +38,28 @@
     </div>
     
 </header>
-<!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Arial;
-  margin: 0;
-}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
 
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
+  margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
   position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Number text (1/3 etc) */
@@ -108,130 +71,88 @@ img {
   top: 0;
 }
 
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.active {
+  background-color: #717171;
 }
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
 </style>
-<body>
 
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783730761.jpeg" style="width:100%">
-  </div>
+<div class="slideshow-container">
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783840445.jpeg" style="width:100%">
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://m.media-amazon.com/images/S/aplus-media/sc/9e43da95-8a03-43b6-abc7-8e9c86cce056.__CR0,0,970,300_PT0_SX970_V1___.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783857424.jpeg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1620384315458.jpeg" style="width:100%">
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://catalog.wlimg.com/1/9250784/other-images/413683.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1622364260077.jpeg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1620384369062.jpeg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://www.thfoods.com/wp-content/uploads/2020/06/nuts-we-have.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
 
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
+</div>
+<br>
 
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783730761.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783840445.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1619783857424.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1620384315458.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1622364260077.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="https://hdn-1.fynd.com/company/1546/applications/60893b85a2ab207079b18416/theme/pictures/free/original/theme-image-1620384369062.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-    </div>
-  </div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
 </div>
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
+showSlides();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = "none";  
   }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
-    
-</body>
 <!-- home section starts  -->
 
 <section class="home" id="home">
@@ -295,150 +216,142 @@ function showSlides(n) {
 
 <section class="category">
 <a href="#" class="box">
-        <img src="https://i.ibb.co/tJsdw4v/39fd35a8-ae67-6580-3839-6cddf593a1de-removebg-preview.png" alt="">
-        <h3>Recharge & Bill Payment</h3>
+        <img src="https://www.pngall.com/wp-content/uploads/2016/06/Almond-Free-Download-PNG.png" alt="">
+        <h3>Almonds</h3>
     </a>
     <a href="#" class="box">
-        <img src="https://i.ibb.co/hCcM1F1/Loan-Insurance1-removebg-preview.png" alt="">
-        <h3>Loan & Insurance</h3>
+        <img src="https://4.imimg.com/data4/FR/PC/MY-4077408/jumbo-cashew-nuts-500x500.jpg" alt="">
+        <h3>Cashew Nuts</h3>
     </a>
    <a href="https://script.google.com/a/macros/mazaama.in/s/AKfycby6FSaUyD9KEowePJtVCq752e90aYKrPGKR2bsznj3PZysyV1AJbPzbSelKdFVTRsyfPA/exec" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/aesc-grocerycore.svg" alt="">
-        <h3>Grocery</h3>
+        <img src="https://www.drlamcoaching.com/images/macadamia-nuts-benefits-20158-inst-1.jpg" alt="">
+        <h3>Macadamia Nuts</h3>
     </a>
    
    <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/aesc-dairyandbeveragescore.svg" alt="">
-        <h3>Dairy & Beverages
-</h3>
+        <img src="https://www.nutfruit.org/js/admin/ckeditor/plugins/kcfinder/upload/images/pine%20nut%202.PNG" alt="">
+        <h3>Pine Nuts</h3>
     </a>
    
    <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/aesc-fruitsandvegetablescore.svg" alt="">
-        <h3>Fruits & Vegetables
-</h3>
+        <img src="https://thumbs.dreamstime.com/b/organic-pistachio-nuts-leaves-wooden-bowl-isolated-white-136041000.jpg" alt="">
+        <h3>Pistachio Kernels</h3>
     </a>
     
     <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/aesc-packagedfoodcore.svg" alt="">
-        <h3>Packaged Food
-</h3>
+        <img src="https://www.herbazest.com/imgs/8/6/7/86011/hazelnuts.jpg" alt="">
+        <h3>Hazelnuts</h3>
     </a>
     
     <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/aesc-appliancescore.svg" alt="">
-        <h3>Appliances</h3>
+        <img src="https://5.imimg.com/data5/HW/LS/TQ/SELLER-5388819/walnuts-slider-1-gv4hks-500x500.jpg" alt="">
+        <h3>Walnuts</h3>
     </a>
     
     <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/aesc-babyandkidscore.svg" alt="">
-        <h3>Baby & Kids
-</h3>
+        <img src="https://www.nutfruit.org/images/consumer-fruit/1570534261-pecans.png" alt="">
+        <h3>Pecan Nuts</h3>
     </a>
     
     <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/homkitchen15421.svg" alt="">
-        <h3>Home & Kitchen
-</h3>
+        <img src="https://www.mynuts.in/wp-content/webpc-passthru.php?src=https://www.mynuts.in/wp-content/uploads/2020/09/Dried-Blueberries-2-768x768.jpg&nocache=1" alt="">
+        <h3>Dried Blueberries</h3>
     </a>
     
     <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/aesc-personalcarecore.svg" alt="">
-        <h3>Personal Care
-</h3>
+        <img src="https://www.mynuts.in/wp-content/uploads/2020/09/Dried-cranberries-1.jpg" alt="">
+        <h3>Dried Cranberries</h3>
     </a>
     
     <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/aesc-schoolsuppliescore.svg" alt="">
-        <h3>School Supplies
-</h3>
+        <img src="http://lavadessa.com.tr/upload/urunler/MohamadNoor.com-227451.jpg" alt="">
+        <h3>Turkey Apricots</h3>
     </a>
     
     <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/935201.svg" alt="">
-        <h3>Clothing & Accessories
-</h3>
+        <img src="https://kimerahome.b-cdn.net/wp-content/uploads/2021/05/Dried-Fig.jpg" alt="">
+        <h3>Dried Figs</h3>
     </a>
     
     <a href="#" class="box">
-        <img src="https://img.dmart.in/images/rwd/categories/aesc-specialscore.svg" alt="">
-        <h3>Specials</h3>
+        <img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/raisins-sultanas-currants-1296x728-feature.jpg" alt="">
+        <h3>Raisins</h3>
     </a>
    
    <a href="#" class="box">
-        <img src="https://i.ibb.co/rp2TxJN/cat-1.png" alt="a">
-        <h3>combo</h3>
+        <img src="https://www.kashmirexotics.com/image/cache/catalog/Shilajit/Dry%20Fruits/seedless-apricots-2-500x500.jpg" alt="a">
+        <h3>Apricots</h3>
     </a>
 
     <a href="#" class="box">
-        <img src="https://i.ibb.co/N3cK3rL/cat-2.png" alt="">
-        <h3>pizza</h3>
+        <img src="https://i.etsystatic.com/23784133/r/il/f4fc46/3021410872/il_570xN.3021410872_dz36.jpg" alt="">
+        <h3>Pitted Prunes</h3>
     </a>
 
     <a href="#" class="box">
-        <img src="https://i.ibb.co/9Gh2t5W/cat-3.png" alt="">
-        <h3>burger</h3>
+        <img src="https://4.imimg.com/data4/QV/PY/MY-12203761/blackcurrant-flavour-500x500.jpg" alt="">
+        <h3>Blackcurrant</h3>
     </a>
 
     <a href="#" class="box">
-        <img src="https://i.ibb.co/jr00mD2/cat-4.png" alt="">
-        <h3>Food</h3>
+        <img src="https://thumbs.dreamstime.com/b/group-medjool-dates-large-isolated-white-background-66601848.jpg" alt="">
+        <h3>Medjool Dates</h3>
     </a>
 
     <a href="#" class="box">
-        <img src="https://i.ibb.co/DfkMDw4/cat-5.png" alt="">
-        <h3>dinner</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1q-WgKWrIVs8D79SJFvNPqAVBXCOmOf86hA&usqp=CAU" alt="">
+        <h3>Safavi Dates</h3>
     </a>
 
     <a href="#" class="box">
-        <img src="https://i.ibb.co/KVkyXMh/cat-6.png" alt="">
-        <h3>coffee</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHSQNSC-BJ4mka5xgxgeeYlVpqVDfTtPsbQ&usqp=CAU" alt="">
+        <h3>Maryam Dates</h3>
     </a>
     
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/computeraccessories_358_166_0402._CB455768652_.png" alt="">
-        <h3>Computers & Accessories</h3>
+        <h3>Ajwa Dates</h3>
     </a>
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/mobilccessories_358_166_0402._CB455768652_.png" alt="">
-        <h3>Mobiles & Accessories</h3>
+        <h3>Flax Seeds</h3>
     </a>
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Electronics_358_166_0402._CB455768652_.png" alt="">
-        <h3>Electronics</h3>
+        <h3>Pumpkin Seeds</h3>
     </a>
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Appliances_358_166_0402._CB455768652_.png" alt="">
-        <h3>Appliances</h3>
+        <h3>Sunflower Seeds</h3>
     </a>
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Kitchenette_358_166._CB455652711_.png" alt="">
-        <h3>Kitchen</h3>
+        <h3>Chia Seeds</h3>
     </a>
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Officefurniture_358_166_0402._CB455768655_.png" alt="">
-        <h3>Furniture</h3>
+        <h3>Basil Seeds</h3>
     </a>
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Officdecor_358_166_0402._CB455768652_.png" alt="">
-        <h3>Decor & Furnishing</h3>
+        <h3>Watermelon Seeds</h3>
     </a>
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/OfficeSupplies_358_166_0402._CB455768654_.png" alt="">
-        <h3>Office Supplies</h3>
+        <h3>Muskmelon Seeds</h3>
     </a>
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/OfficeImprovement_358_166._CB455652714_.png" alt="">
-        <h3>Improvement</h3>
+        <h3>Cumin Seeds</h3>
     </a>
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/IndustrialSupply_358_166._CB455652715_.png" alt="">
-        <h3>Industrial Supplies</h3>
+        <h3>Cardamon</h3>
     </a>
     
     <a href="#" class="box">
         <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/SBCnewtiles/Backpacksuggage_358_166_0402._CB455768652_.png" alt="">
-        <h3>Backpacks & Luggage</h3>
+        <h3>Cinnamon</h3>
     </a>
     
 
